@@ -7,72 +7,74 @@ This file preserves the README text that existed in the historical snapshot used
 ---
 type: moc
 status: active
-version: v4
+version: v5
 updated: 2026-08-14
 tags: [research-os, reusable-pipeline, git-ready, moc]
 ---
 # Reusable Research OS
 
 ## 1. Project Overview
-Reusable Research OS is a topic-agnostic research workflow for moving from an unfamiliar research area to a defensible problem, verified evidence base, benchmark, implementation, experiments, academic writing, and publication preparation. It is designed to preserve the full reasoning trail instead of only the final topic.
+Reusable Research OS is a topic-agnostic framework for turning an unfamiliar research domain into a verified question, reproducible benchmark, feasible implementation, interpretable experiment, and publication-ready artifact. It explicitly preserves the reasoning journey, including rejected claims and data-quality failures.
 
-The active thesis-specific evidence is intentionally stored in a separate vault. This repository contains reusable process, governance, evidence, AI-orchestration, quality-gate, and publication patterns.
+v5 extends the evidence-first workflow with execution patterns for large multimodal datasets, limited accelerator budgets, feasibility pilots, and Git-ready research releases.
 
 ## 2. Features
-1. Evidence states that separate verified facts, hypotheses, rejected claims, and unresolved risks.
-2. Atomic Obsidian nodes for decisions, sources, constraints, AI research runs, and quality gates.
-3. Adversarial novelty verification before architecture design.
-4. Dataset release, schema, alignment, and provenance gates.
-5. AI-helper orchestration with prompt-run provenance and correction tracking.
-6. Negative-result-safe experiment design.
-7. Git/version snapshot rules that preserve historical research reasoning.
-8. Publication and artifact checklists.
+1. Evidence states and adversarial novelty locking.
+2. Atomic Obsidian nodes with backlinks for decisions, constraints, sources, AI runs, and corrections.
+3. Dataset revision, schema, correction, and alignment gates.
+4. Large-file streaming and compact feature-store pattern.
+5. Pre-paid-compute feasibility pilot with go/no-go criteria.
+6. Negative-result-safe baseline design.
+7. AI-helper provenance and correction tracking.
+8. Git-ready README, release, hashing, and historical snapshot practices.
+9. Publication and reproducibility artifact contracts.
 
 ## 3. Tech Stack
-1. **Obsidian Markdown**: human-readable knowledge graph and backlinks.
-2. **Git**: line-level history, tags, and release provenance.
-3. **Python/Jupyter**: data audits, benchmark construction, and reproducibility scripts when a project reaches implementation.
-4. **External research assistants**: used as scouts or reviewers, never as unverified evidence sources.
-5. **Primary-source literature**: final authority for scientific claims.
+1. **Obsidian Markdown**: graph-native research memory.
+2. **Git/GitHub**: version history, tags, reviews, and public repository releases.
+3. **Python/Jupyter**: data validation, experiments, and reproducibility tooling.
+4. **Parquet/NumPy/NPZ**: compact model-ready research artifacts.
+5. **FFmpeg**: efficient video slicing/sampling in multimedia projects.
+6. **Primary-source literature**: final evidence authority.
+7. **External AI assistants**: scoped discovery/reviewer roles with prompt provenance.
 
 ## 4. Architecture
 ```mermaid
-flowchart LR
-    A[Research Question] --> B[Evidence Discovery]
-    B --> C[Primary Source Verification]
+flowchart TD
+    A[Research Goal] --> B[Discovery]
+    B --> C[Primary Verification]
     C --> D[Adversarial Evidence Lock]
-    D --> E[Dataset and Benchmark Gate]
-    E --> F[Baselines and Experiments]
-    F --> G[Implementation]
-    G --> H[Scientific Analysis]
-    H --> I[Writing and Publication]
-    D --> J[Reject or Narrow]
-    E --> J
-    F --> J
+    D --> E[Dataset Revision + Alignment Gate]
+    E --> F[Mini Feasibility Pilot]
+    F -->|PASS| G[Compact Feature Store]
+    F -->|FAIL| H[Redesign Before Paid Compute]
+    G --> I[Controlled Baselines]
+    I --> J[Full Evaluation]
+    J --> K[Writing + Git Release + Publication]
 ```
 
-Start with [[00_governance/SYSTEM_RULES]], then [[01_pipeline/END_TO_END_PIPELINE]], [[02_evidence/EVIDENCE_PROTOCOL]], and [[02_evidence/ADVERSARIAL_EVIDENCE_LOCK]].
+Core entry points: [[00_governance/SYSTEM_RULES]], [[01_pipeline/END_TO_END_PIPELINE]], [[01_pipeline/LARGE_MULTIMODAL_DATA_PIPELINE]], and [[08_quality_gates/FEASIBILITY_PILOT_GATE]].
 
 ## 5. Project Structure
 ```text
 Reusable_Research_OS/
-├── 00_governance/      # system rules, node schema, persistence policy
-├── 01_pipeline/        # end-to-end research workflow
-├── 02_evidence/        # evidence protocol and adversarial evidence lock
-├── 03_ai_roles/        # AI orchestration and helper registry
-├── 04_stage_contracts/ # stage exit criteria and negative-result contract
-├── 05_scoring/         # topic scoring, rejection, and narrowing
-├── 06_prompts/         # reusable prompts and prompt-run ledger rules
-├── 07_artifacts/       # required research artifacts
-├── 08_quality_gates/   # evidence, dataset, and implementation gates
+├── 00_governance/      # governance, persistence, atomic-node rules
+├── 01_pipeline/        # standard and large-multimodal pipelines
+├── 02_evidence/        # verification and adversarial evidence locking
+├── 03_ai_roles/        # AI-helper roles and orchestration
+├── 04_stage_contracts/ # stage exits and negative-result contract
+├── 05_scoring/         # candidate scoring and rejection
+├── 06_prompts/         # reusable prompt library and run ledger
+├── 07_artifacts/       # reproducibility and Git-release artifacts
+├── 08_quality_gates/   # data, evidence, feasibility, implementation gates
 ├── 09_publication/     # publication workflow
-├── 10_change_log/      # changelog, version history, Git policy
-├── 11_session_history/ # chronological research-system evolution
+├── 10_change_log/      # changelog and snapshot history
+├── 11_session_history/ # chronological system evolution
 └── README.md
 ```
 
 ## Version
-This is **v4**. It extends v3 with the adversarial evidence-lock protocol, dataset release/alignment gate, and negative-result contract derived from the thesis validation sprint. See [[10_change_log/VERSION_HISTORY]] and [[10_change_log/CHANGELOG]].
+**v5, 2026-08-14.** This release is the executable research-system snapshot. It preserves all v4 evidence-lock work and adds large-data compression, pilot gating, and Git-release practices. See [[10_change_log/VERSION_HISTORY]].
 
 
 Graph integrity record: [[GRAPH_AUDIT]].

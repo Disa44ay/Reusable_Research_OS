@@ -2,7 +2,7 @@
 type: graph-audit
 status: passed
 updated: 2026-08-16
-public_release: "Release 03"
+public_release: "Release 04"
 tags: [obsidian, audit, git, integrity]
 related:
   - "[[VERSION_BRIEF]]"
@@ -11,15 +11,15 @@ related:
 # Graph and Repository Integrity Audit
 
 **Project:** Reusable Research OS  
-**Release:** Release 03 — Scientific Lock and Re-verification  
+**Release:** Release 04 — Execution-Ready Proposal and Feasibility  
 **Audit date:** 2026-08-16
 
 ## Obsidian checks
 
 | Check | Result |
 |---|---:|
-| Markdown notes before this audit record | 31 |
-| Wikilinks inspected | 70 |
+| Markdown notes before this audit record | 37 |
+| Wikilinks inspected | 94 |
 | Local repository links inspected | 0 |
 | Unresolved wikilinks | 0 |
 | Invalid heading targets | 0 |

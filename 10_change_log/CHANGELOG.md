@@ -2,7 +2,7 @@
 type: changelog
 status: active
 tags: [history]
-updated: 2026-08-14
+updated: 2026-08-16
 ---
 # Changelog
 
@@ -28,3 +28,15 @@ Added graph-native reasoning rules, an atomic node schema, candidate falsificati
 - Added [[../08_quality_gates/DATASET_RELEASE_AND_ALIGNMENT_GATE]].
 - Added [[../04_stage_contracts/NEGATIVE_RESULT_CONTRACT]].
 - Rebuilt README for Git publication.
+
+## 2026-08-14 - v5
+- Added [[../01_pipeline/LARGE_MULTIMODAL_DATA_PIPELINE]].
+- Added [[../08_quality_gates/FEASIBILITY_PILOT_GATE]].
+- Added [[../07_artifacts/GIT_READY_RESEARCH_RELEASE]].
+
+## 2026-08-16 - Public Release 04 synchronization
+- Added [[../08_quality_gates/INDEPENDENT_REPLICATION_VALIDATION]].
+- Added [[../02_evidence/SOURCE_RECONCILIATION_RULE]].
+- Added [[../07_artifacts/CONCISE_PROPOSAL_AND_SOURCE_AUDIT_PATTERN]].
+- Added lightweight vault-validation tooling for release integrity.
+- Public Release 04 groups historical v5 with verified post-v5 feasibility/documentation lessons without altering earlier research history.
