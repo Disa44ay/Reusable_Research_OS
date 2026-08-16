@@ -2,7 +2,7 @@
 type: changelog
 status: active
 tags: [history]
-updated: 2026-08-10
+updated: 2026-08-14
 ---
 # Changelog
 
@@ -22,3 +22,9 @@ Added graph-native reasoning rules, an atomic node schema, candidate falsificati
 3. Added prompt-run provenance protocol.
 4. Added Git and snapshot versioning guidance.
 5. Added fast-deadline validation branch and benchmark-first quality gates.
+
+## 2026-08-14 - v4
+- Added [[../02_evidence/ADVERSARIAL_EVIDENCE_LOCK]].
+- Added [[../08_quality_gates/DATASET_RELEASE_AND_ALIGNMENT_GATE]].
+- Added [[../04_stage_contracts/NEGATIVE_RESULT_CONTRACT]].
+- Rebuilt README for Git publication.

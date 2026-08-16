@@ -1,8 +1,8 @@
 ---
 type: version-brief
 status: active
-public_release: "Release 02"
-historical_basis: "historical v3 (2026-08-12)"
+public_release: "Release 03"
+historical_basis: "historical v4 (2026-08-14)"
 updated: 2026-08-16
 tags: [release, history, git, obsidian]
 related:
@@ -10,51 +10,50 @@ related:
   - "[[RELEASE_HISTORY]]"
   - "[[ARCHITECTURE]]"
 ---
-# Version Brief — Release 02
+# Version Brief — Release 03
 
 ## Release identity
 
 **Project:** Reusable Research OS  
-**Public release:** Release 02 — Evidence-Driven Candidate Validation  
-**Historical basis:** historical v3 (2026-08-12)  
-**Previous public release:** Release 01
+**Public release:** Release 03 — Scientific Lock and Re-verification  
+**Historical basis:** historical v4 (2026-08-14)  
+**Previous public release:** Release 02
 
 ## Plain-language summary
 
-Release 02 shows the Research OS being used under a real thesis deadline. The system expanded from static workflow documentation into an evidence-orchestration process that records external-AI roles, prompt provenance, memory/persistence boundaries, benchmark-first validation, and Git/versioning practices.
+Release 03 is the scientific-falsification stage. The Research OS now requires a candidate to survive adversarial evidence review, dataset release/alignment checks, and a negative-result-safe experiment contract before it is treated as implementation-ready.
 
 ## Previous release summary
 
-Release 01 established the reusable workflow, graph-native knowledge structure, evidence protocol, scoring rules, and stage contracts.
+Release 02 added AI provenance, persistence, Git history, and benchmark-first validation while the thesis candidate was being narrowed.
 
 ## What changed
 
-1. Added memory and persistence policy.
-2. Added AI helper registry and quota-aware external-AI protocol.
-3. Added prompt-run provenance so AI outputs can be audited and corrected.
-4. Added Git/snapshot versioning guidance.
-5. Strengthened benchmark-first validation and fast-deadline decision flow.
-6. Added reusable resource-aware thinking around one-time preprocessing and compact model-ready features.
+1. Added an adversarial evidence-lock procedure.
+2. Added a dataset release, schema, correction, and alignment gate.
+3. Added a negative-result contract so a thesis remains scientifically interpretable even when the proposed method does not improve the baseline.
+4. Converted the README into a Git-facing project entry point.
+5. Recorded graph-integrity evidence for the release.
 
 ## Why it changed
 
-The football thesis search began using Gemini, Claude, Perplexity and direct dataset inspection in parallel. That exposed the need to preserve not only conclusions but also which assistant produced them, which claims were corrected, and which evidence was primary.
+Primary-source re-verification found that some earlier claims were too broad, some dataset assumptions were release-specific, and the proposed method could not rely on novelty from graph reasoning alone. The workflow therefore needed formal falsification and data-provenance gates.
 
 ## What we were trying to learn
 
-How to coordinate multiple research assistants without treating any assistant as authoritative, and how to preserve the path from broad discovery to an evidence-backed candidate.
+A defensible research question can survive even when method novelty is downgraded, provided the experiment is designed to distinguish the information contribution from the modeling contribution.
 
 ## Current understanding
 
-AI helpers are useful as scoped scouts and reviewers, but final claims must be controlled by primary evidence and explicit correction provenance. The operating system also needs durable research snapshots because conversation context alone is insufficient.
+The strongest research workflow is not one that protects an idea. It is one that records where the idea weakens, narrows the claim, and still produces an interpretable experiment.
 
 ## Remaining uncertainty
 
-The workflow had not yet faced a final hostile novelty review or dataset-release mismatch serious enough to require formal alignment gates.
+The system had not yet translated those gates into a resource-budgeted, large-file execution plan.
 
 ## Next direction
 
-Run a final adversarial evidence lock on the strongest thesis candidate and formalize dataset-version, alignment, and negative-result gates.
+Convert the scientific lock into an executable pipeline with large-data compression, pre-paid-compute feasibility testing, and release-ready documentation.
 
 ## Historical continuity
 
@@ -62,6 +61,6 @@ This release is a **complete repository snapshot**, not a patch. Earlier notes r
 
 ## Preservation notes
 
-Release 01 rules remain present. New AI/persistence rules extend them rather than replacing the original evidence and stage-contract system.
+All earlier evidence/scoring rules remain. The new gates are additions motivated by real corrections in the thesis project.
 
 For the original v1-v5 lineage, see the project's version-history and migration notes as well as [[RELEASE_HISTORY]].

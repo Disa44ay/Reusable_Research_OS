@@ -1,28 +1,24 @@
 # Architecture
 
 ## Status
-Release 02 extends the documented Research OS with AI/persistence and versioning practices. The system remains a human-directed research workflow.
+Release 03 adds formal falsification and dataset provenance gates to the documented workflow.
 
 ## Research flow
 
 ```text
-Research goal
-→ broad discovery
-→ scoped AI-helper research
-→ primary-source verification
-→ prompt/evidence provenance
-→ benchmark feasibility check
-→ candidate decision
-→ durable vault + Git snapshot
+Candidate
+→ primary-source review
+→ adversarial evidence lock
+→ dataset release/schema/alignment gate
+→ negative-result contract
+→ implementation decision
 ```
+
+The candidate is allowed to narrow or fail. Rejected claims are preserved as evidence rather than rewritten.
 
 ## Main components
 
-1. [[00_governance/SYSTEM_RULES]]
-2. [[00_governance/MEMORY_AND_PERSISTENCE_POLICY]]
-3. [[01_pipeline/END_TO_END_PIPELINE]]
-4. [[02_evidence/EVIDENCE_PROTOCOL]]
-5. [[03_ai_roles/AI_HELPER_REGISTRY]]
-6. [[03_ai_roles/EXTERNAL_AI_HELPER_PROTOCOL]]
-7. [[06_prompts/PROMPT_RUN_LEDGER_PROTOCOL]]
-8. [[10_change_log/VERSIONING_AND_GIT]]
+1. [[02_evidence/ADVERSARIAL_EVIDENCE_LOCK]]
+2. [[08_quality_gates/DATASET_RELEASE_AND_ALIGNMENT_GATE]]
+3. [[04_stage_contracts/NEGATIVE_RESULT_CONTRACT]]
+4. [[01_pipeline/END_TO_END_PIPELINE]]

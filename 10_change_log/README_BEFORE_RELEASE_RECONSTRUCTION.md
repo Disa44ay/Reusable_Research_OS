@@ -7,41 +7,79 @@ This file preserves the README text that existed in the historical snapshot used
 ---
 type: moc
 status: active
-tags: [research-os, reusable-pipeline, moc]
-updated: 2026-08-10
+version: v4
+updated: 2026-08-14
+tags: [research-os, reusable-pipeline, git-ready, moc]
 ---
 # Reusable Research OS
 
-This vault contains the reusable research system. It must remain topic-agnostic.
+## 1. Project Overview
+Reusable Research OS is a topic-agnostic research workflow for moving from an unfamiliar research area to a defensible problem, verified evidence base, benchmark, implementation, experiments, academic writing, and publication preparation. It is designed to preserve the full reasoning trail instead of only the final topic.
 
-Its job is to let an AI or human start from a brand-new research area and move through evidence discovery, dataset validation, literature review, gap validation, topic selection, architecture, experiments, implementation, scientific writing, review, and publication preparation without inventing evidence.
+The active thesis-specific evidence is intentionally stored in a separate vault. This repository contains reusable process, governance, evidence, AI-orchestration, quality-gate, and publication patterns.
 
-## Boundary rule
-Topic-specific findings, papers, datasets, candidate gaps, experimental results, thesis decisions, and defense material belong in the separate research-project vault, not here.
+## 2. Features
+1. Evidence states that separate verified facts, hypotheses, rejected claims, and unresolved risks.
+2. Atomic Obsidian nodes for decisions, sources, constraints, AI research runs, and quality gates.
+3. Adversarial novelty verification before architecture design.
+4. Dataset release, schema, alignment, and provenance gates.
+5. AI-helper orchestration with prompt-run provenance and correction tracking.
+6. Negative-result-safe experiment design.
+7. Git/version snapshot rules that preserve historical research reasoning.
+8. Publication and artifact checklists.
 
-## Read order
-1. [[00_governance/SYSTEM_RULES]]
-2. [[01_pipeline/END_TO_END_PIPELINE]]
-3. [[02_evidence/EVIDENCE_PROTOCOL]]
-4. [[03_ai_roles/AI_ORCHESTRATION]]
-5. [[04_stage_contracts/STAGE_CONTRACTS]]
-6. [[05_scoring/TOPIC_SCORING_AND_REJECTION]]
-7. [[06_prompts/REUSABLE_PROMPT_LIBRARY]]
-8. [[07_artifacts/REQUIRED_ARTIFACTS]]
-9. [[08_quality_gates/QUALITY_GATES]]
-10. [[09_publication/PUBLICATION_PIPELINE]]
-11. [[10_change_log/CHANGELOG]]
-12. [[11_session_history/SESSION_LOG]]
+## 3. Tech Stack
+1. **Obsidian Markdown**: human-readable knowledge graph and backlinks.
+2. **Git**: line-level history, tags, and release provenance.
+3. **Python/Jupyter**: data audits, benchmark construction, and reproducibility scripts when a project reaches implementation.
+4. **External research assistants**: used as scouts or reviewers, never as unverified evidence sources.
+5. **Primary-source literature**: final authority for scientific claims.
 
-## Current system status
-Version: 0.1 migrated from the original thesis knowledge base.
+## 4. Architecture
+```mermaid
+flowchart LR
+    A[Research Question] --> B[Evidence Discovery]
+    B --> C[Primary Source Verification]
+    C --> D[Adversarial Evidence Lock]
+    D --> E[Dataset and Benchmark Gate]
+    E --> F[Baselines and Experiments]
+    F --> G[Implementation]
+    G --> H[Scientific Analysis]
+    H --> I[Writing and Publication]
+    D --> J[Reject or Narrow]
+    E --> J
+    F --> J
+```
 
-The original mixed knowledge base has been separated into this reusable system vault and a thesis-specific research vault. Nothing from the source files was intentionally deleted. See [[10_change_log/MIGRATION_MANIFEST]].
+Start with [[00_governance/SYSTEM_RULES]], then [[01_pipeline/END_TO_END_PIPELINE]], [[02_evidence/EVIDENCE_PROTOCOL]], and [[02_evidence/ADVERSARIAL_EVIDENCE_LOCK]].
 
-## Graph and reasoning extraction
-Important constraints, decisions, sources, candidates, and rejections should be represented as atomic nodes in addition to readable narrative notes. Follow [[00_governance/NODE_SCHEMA]].
+## 5. Project Structure
+```text
+Reusable_Research_OS/
+├── 00_governance/      # system rules, node schema, persistence policy
+├── 01_pipeline/        # end-to-end research workflow
+├── 02_evidence/        # evidence protocol and adversarial evidence lock
+├── 03_ai_roles/        # AI orchestration and helper registry
+├── 04_stage_contracts/ # stage exit criteria and negative-result contract
+├── 05_scoring/         # topic scoring, rejection, and narrowing
+├── 06_prompts/         # reusable prompts and prompt-run ledger rules
+├── 07_artifacts/       # required research artifacts
+├── 08_quality_gates/   # evidence, dataset, and implementation gates
+├── 09_publication/     # publication workflow
+├── 10_change_log/      # changelog, version history, Git policy
+├── 11_session_history/ # chronological research-system evolution
+└── README.md
+```
 
-## Version 3 update
-This snapshot adds graph-linked policies for external AI orchestration, prompt provenance, persistence, Git versioning, benchmark-first validation, and fast-deadline research triage. Historical v1 and v2 snapshots remain unchanged.
+## Version
+This is **v4**. It extends v3 with the adversarial evidence-lock protocol, dataset release/alignment gate, and negative-result contract derived from the thesis validation sprint. See [[10_change_log/VERSION_HISTORY]] and [[10_change_log/CHANGELOG]].
 
-Version lineage: [[10_change_log/VERSION_HISTORY]].
+
+Graph integrity record: [[GRAPH_AUDIT]].
+
+
+## Additional Navigation
+- [[11_session_history/SESSION_LOG]]
+- [[06_prompts/REUSABLE_PROMPT_LIBRARY]]
+- [[09_publication/PUBLICATION_PIPELINE]]
+- [[10_change_log/MIGRATION_MANIFEST]]

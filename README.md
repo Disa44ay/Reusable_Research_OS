@@ -1,7 +1,7 @@
 ---
 type: moc
 status: active
-public_release: "Release 02"
+public_release: "Release 03"
 updated: 2026-08-16
 tags: [research-os, reusable-pipeline, git-ready, moc]
 ---
@@ -9,16 +9,16 @@ tags: [research-os, reusable-pipeline, git-ready, moc]
 
 ## 1. Project Overview
 
-Reusable Research OS is a topic-agnostic research workflow for moving from an unfamiliar domain to a verified question, feasible experiment, reproducible evidence trail, and publication-ready artifact. **Release 02: Evidence-Driven Candidate Validation** represents the state of that workflow at this historical milestone.
+Reusable Research OS is a topic-agnostic research workflow for moving from an unfamiliar domain to a verified question, feasible experiment, reproducible evidence trail, and publication-ready artifact. **Release 03: Scientific Lock and Re-verification** represents the state of that workflow at this historical milestone.
 
 Start with [[VERSION_BRIEF]] for the human-readable history of this release.
 
 ## 2. Features
 
-1. Everything in Release 01.
-2. Memory/persistence policy and AI-helper provenance.
-3. Prompt-run ledger and quota-aware external-AI orchestration.
-4. Git/versioning and benchmark-first deadline workflow.
+1. Everything in Release 02.
+2. Adversarial evidence lock.
+3. Dataset release/schema/alignment gate.
+4. Negative-result-safe experiment contract.
 
 ## 3. Tech Stack
 
@@ -31,7 +31,7 @@ Start with [[VERSION_BRIEF]] for the human-readable history of this release.
 ## 4. Architecture
 
 ```text
-Research Goal --> Discovery --> AI Scouts --> Primary Verification --> Prompt/Evidence Ledger --> Benchmark Check --> Decision
+Candidate --> Adversarial Evidence Lock --> Dataset Release/Alignment Gate --> Negative-Result Contract --> Implementation Decision
 ```
 
 This is a research/knowledge workflow, not a claim of an autonomous software platform. See [[ARCHITECTURE]] and [[01_pipeline/END_TO_END_PIPELINE]].
