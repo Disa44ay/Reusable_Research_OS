@@ -47,3 +47,10 @@ A project may allow paid or temporary research compute while still requiring zer
 
 ## Rule 12. Multimodality must be functional
 Do not reward a topic merely for combining modalities. A second modality should address a documented limitation, add measurable information, or enable a clearly defined capability. Decorative multimodality is not a research contribution.
+
+## Update 2026-08-12: AI provenance and persistence
+1. Treat [[00_governance/MEMORY_AND_PERSISTENCE_POLICY]] as mandatory for long research journeys.
+2. External AI tools are research assistants, not evidence authorities. Follow [[03_ai_roles/EXTERNAL_AI_HELPER_PROTOCOL]].
+3. Log prompts and correction history through [[06_prompts/PROMPT_RUN_LEDGER_PROTOCOL]].
+4. Design the benchmark before optimizing model architecture when the proposed contribution depends on a derived task.
+5. Separate task novelty, information novelty, modeling novelty, and engineering novelty.

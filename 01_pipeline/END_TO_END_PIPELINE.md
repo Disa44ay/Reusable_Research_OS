@@ -86,3 +86,19 @@ Record one of these outcomes:
 
 ## Stage 6B. Candidate-title checkpoint
 When an institution requires a title before the final topic can be fully locked, create 2 to 3 evidence-backed candidate titles instead of pretending one title is final. Each candidate title must map to a candidate-topic node and list unresolved assumptions. See [[04_stage_contracts/CANDIDATE_TITLE_CHECKPOINT]].
+
+## Update 2026-08-12: Fast deadline validation branch
+When a title deadline is imminent, use this compressed evidence path:
+
+1. Candidate boundary definition.
+2. Adversarial related-work sweep.
+3. Deep verification of the two or three most dangerous papers.
+4. Dataset access and label audit.
+5. Benchmark design before model design.
+6. Novelty decomposition into task, information, method, and benchmark contributions.
+7. Minimum baseline and ablation design.
+8. Hostile reviewer test.
+9. Candidate-title ranking.
+10. Proposal lock.
+
+This branch does not lower the evidence standard. It reduces duplicated search.

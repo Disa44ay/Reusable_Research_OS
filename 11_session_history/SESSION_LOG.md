@@ -23,3 +23,6 @@ The project owner requested that Markdown updates be deferred during active disc
 The session also established a reusable topic-selection principle: under an early title deadline, present a small set of evidence-backed candidate titles when allowed, then continue falsification and validation before final topic lock.
 
 Additional reusable controls were added for atomic reasoning nodes, research-compute versus deployment-cost separation, data-access latency, annotation burden, team capacity, and non-decorative multimodality.
+
+## Session 2026-08-12
+The reusable system was extended after a football thesis validation sprint. The key reusable lessons were adversarial novelty checking, narrow use of scarce deep-reading assistants, explicit prompt provenance, preservation of correction history, benchmark-before-model design, and one-time preprocessing of massive raw data into compact model-ready features.

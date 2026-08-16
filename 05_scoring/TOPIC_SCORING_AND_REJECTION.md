@@ -43,3 +43,9 @@ Reject or heavily downgrade a topic when:
 3. dataset approval delay can block the project and no fallback exists,
 4. the supposed multimodal contribution adds no measurable information,
 5. the system engineering layer is being used to disguise a weak research contribution.
+
+## Benchmark and data-pipeline score update 2026-08-12
+Add two explicit checks for data-heavy topics:
+
+1. **Model-ready data feasibility:** Can large raw files be converted once into compact tensors, features, Parquet, or NPZ without repeatedly paying the raw-data compute cost?
+2. **Benchmark legitimacy:** If labels are derived from an existing dataset, are the temporal windows, splits, class policy, and leakage controls defensible before experiments begin?

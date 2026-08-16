@@ -25,3 +25,8 @@ Before a checkpoint is considered durable:
 3. new candidate topics link to datasets and evidence nodes,
 4. no internal Obsidian link is unresolved,
 5. the readable narrative and atomic nodes do not contradict each other without an explicit supersession link.
+
+## External AI quality gate
+A finding from Gemini, Claude, Perplexity, Copilot, or another assistant cannot become VERIFIED solely because multiple assistants repeat it. At least one load-bearing primary source or official repository must support it.
+
+A novelty claim should state the exact searched boundary and avoid converting "not found" into "does not exist."

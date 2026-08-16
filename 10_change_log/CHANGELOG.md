@@ -15,3 +15,10 @@ Established the permanent two-vault boundary, no-knowledge-loss rule, current-ch
 Improved the reusable system after the first post-migration thesis-topic session.
 
 Added graph-native reasoning rules, an atomic node schema, candidate falsification, a candidate-title checkpoint for deadline-driven thesis selection, separate research-compute and deployment-cost treatment, meaningful-multimodality rules, and additional scoring dimensions for access latency, annotation burden, team capacity, and zero-cost deployment constraints.
+
+## 2026-08-12, v3
+1. Added durable memory and persistence rules.
+2. Added external AI helper roles and quota-aware orchestration.
+3. Added prompt-run provenance protocol.
+4. Added Git and snapshot versioning guidance.
+5. Added fast-deadline validation branch and benchmark-first quality gates.

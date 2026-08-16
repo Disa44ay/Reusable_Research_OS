@@ -40,3 +40,8 @@ The original mixed knowledge base has been separated into this reusable system v
 
 ## Graph and reasoning extraction
 Important constraints, decisions, sources, candidates, and rejections should be represented as atomic nodes in addition to readable narrative notes. Follow [[00_governance/NODE_SCHEMA]].
+
+## Version 3 update
+This snapshot adds graph-linked policies for external AI orchestration, prompt provenance, persistence, Git versioning, benchmark-first validation, and fast-deadline research triage. Historical v1 and v2 snapshots remain unchanged.
+
+Version lineage: [[10_change_log/VERSION_HISTORY]].

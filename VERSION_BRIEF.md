@@ -1,8 +1,8 @@
 ---
 type: version-brief
 status: active
-public_release: "Release 01"
-historical_basis: "historical v1-v2 period, endpoint v2 (2026-08-10)"
+public_release: "Release 02"
+historical_basis: "historical v3 (2026-08-12)"
 updated: 2026-08-16
 tags: [release, history, git, obsidian]
 related:
@@ -10,51 +10,51 @@ related:
   - "[[RELEASE_HISTORY]]"
   - "[[ARCHITECTURE]]"
 ---
-# Version Brief — Release 01
+# Version Brief — Release 02
 
 ## Release identity
 
 **Project:** Reusable Research OS  
-**Public release:** Release 01 — Foundation and Scope Formation  
-**Historical basis:** historical v1-v2 period, endpoint v2 (2026-08-10)  
-**Previous public release:** None
+**Public release:** Release 02 — Evidence-Driven Candidate Validation  
+**Historical basis:** historical v3 (2026-08-12)  
+**Previous public release:** Release 01
 
 ## Plain-language summary
 
-Reusable Research OS is a topic-agnostic framework for carrying a research problem from discovery to evidence checking, topic selection, execution planning, and eventual publication. Release 01 represents the end of the foundation period: the original vault split had already occurred, and the system had been reorganized into a graph-native Obsidian workflow with explicit rules for evidence, candidate rejection, stage exits, and knowledge preservation.
+Release 02 shows the Research OS being used under a real thesis deadline. The system expanded from static workflow documentation into an evidence-orchestration process that records external-AI roles, prompt provenance, memory/persistence boundaries, benchmark-first validation, and Git/versioning practices.
 
 ## Previous release summary
 
-There is no previous public release. Historically, the period begins with v1 on 2026-08-09, when the reusable workflow was separated from the thesis-specific vault. Historical v2 on 2026-08-10 stabilized that foundation and is the endpoint of this public release.
+Release 01 established the reusable workflow, graph-native knowledge structure, evidence protocol, scoring rules, and stage contracts.
 
 ## What changed
 
-1. Separated reusable research methodology from thesis-specific knowledge.
-2. Established evidence states, research stage contracts, topic scoring/rejection, reusable prompts, publication workflow, and quality gates.
-3. Added graph-native atomic-node rules and explicit knowledge-preservation requirements.
-4. Added a candidate-title checkpoint for deadline-driven thesis selection.
-5. Separated research-compute affordability from zero-cost deployment constraints.
-6. Expanded scoring to include access latency, annotation burden, team capacity, and meaningful multimodality.
+1. Added memory and persistence policy.
+2. Added AI helper registry and quota-aware external-AI protocol.
+3. Added prompt-run provenance so AI outputs can be audited and corrected.
+4. Added Git/snapshot versioning guidance.
+5. Strengthened benchmark-first validation and fast-deadline decision flow.
+6. Added reusable resource-aware thinking around one-time preprocessing and compact model-ready features.
 
 ## Why it changed
 
-The first mixed knowledge base had combined reusable methodology with one thesis project. The system was separated so the research process could be reused, while the first follow-up session showed that the workflow also needed atomic graph nodes, clearer deadline exits, and stronger feasibility scoring.
+The football thesis search began using Gemini, Claude, Perplexity and direct dataset inspection in parallel. That exposed the need to preserve not only conclusions but also which assistant produced them, which claims were corrected, and which evidence was primary.
 
 ## What we were trying to learn
 
-How to turn broad domain exploration into a bounded research candidate without losing rejected ideas or unsupported claims.
+How to coordinate multiple research assistants without treating any assistant as authoritative, and how to preserve the path from broad discovery to an evidence-backed candidate.
 
 ## Current understanding
 
-By the end of this stage, the research process had a stable Obsidian structure and explicit rules for evidence, candidate selection, preservation, and publication. It was still primarily a documented operating system rather than an automated software product.
+AI helpers are useful as scoped scouts and reviewers, but final claims must be controlled by primary evidence and explicit correction provenance. The operating system also needs durable research snapshots because conversation context alone is insufficient.
 
 ## Remaining uncertainty
 
-The system had not yet been tested against a full adversarial literature-validation cycle, large multimodal datasets, or a real feasibility pilot.
+The workflow had not yet faced a final hostile novelty review or dataset-release mismatch serious enough to require formal alignment gates.
 
 ## Next direction
 
-Apply the Research OS to the football thesis candidate search and record external-AI research, direct dataset evidence, and benchmark reasoning as first-class artifacts.
+Run a final adversarial evidence lock on the strongest thesis candidate and formalize dataset-version, alignment, and negative-result gates.
 
 ## Historical continuity
 
@@ -62,6 +62,6 @@ This release is a **complete repository snapshot**, not a patch. Earlier notes r
 
 ## Preservation notes
 
-The original v1 migration logic and v2 graph-native improvements are both part of this release period. Early rules and prompts are retained because they explain how the later evidence-driven workflow emerged.
+Release 01 rules remain present. New AI/persistence rules extend them rather than replacing the original evidence and stage-contract system.
 
 For the original v1-v5 lineage, see the project's version-history and migration notes as well as [[RELEASE_HISTORY]].
