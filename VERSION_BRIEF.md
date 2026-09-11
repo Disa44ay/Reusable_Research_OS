@@ -1,8 +1,8 @@
 ---
 type: version-brief
 status: active
-public_release: "Release 04"
-historical_basis: "historical v5 plus verified post-v5 work through 2026-08-16"
+public_release: "Release 01"
+historical_basis: "historical v1-v2 period, endpoint v2 (2026-08-10)"
 updated: 2026-08-16
 tags: [release, history, git, obsidian]
 related:
@@ -10,52 +10,51 @@ related:
   - "[[RELEASE_HISTORY]]"
   - "[[ARCHITECTURE]]"
 ---
-# Version Brief — Release 04
+# Version Brief — Release 01
 
 ## Release identity
 
 **Project:** Reusable Research OS  
-**Public release:** Release 04 — Execution-Ready Proposal and Feasibility  
-**Historical basis:** historical v5 plus verified post-v5 work through 2026-08-16  
-**Previous public release:** Release 03
+**Public release:** Release 01 — Foundation and Scope Formation  
+**Historical basis:** historical v1-v2 period, endpoint v2 (2026-08-10)  
+**Previous public release:** None
 
 ## Plain-language summary
 
-Release 04 is the current execution-ready Research OS. It combines the earlier evidence and falsification workflow with large multimodal-data handling, a feasibility-pilot gate, Git-ready release practices, independent replication checks, source-reconciliation rules, and a clearer separation between readable proposals and detailed citation audits.
+Reusable Research OS is a topic-agnostic framework for carrying a research problem from discovery to evidence checking, topic selection, execution planning, and eventual publication. Release 01 represents the end of the foundation period: the original vault split had already occurred, and the system had been reorganized into a graph-native Obsidian workflow with explicit rules for evidence, candidate rejection, stage exits, and knowledge preservation.
 
 ## Previous release summary
 
-Release 03 established adversarial evidence locking, dataset release/alignment gates, and negative-result-safe experimentation.
+There is no previous public release. Historically, the period begins with v1 on 2026-08-09, when the reusable workflow was separated from the thesis-specific vault. Historical v2 on 2026-08-10 stabilized that foundation and is the endpoint of this public release.
 
 ## What changed
 
-1. Added a large multimodal-data pipeline based on streaming raw data once and training from compact feature stores.
-2. Added a feasibility-pilot gate before paid accelerator spending.
-3. Added Git-ready research-release practices.
-4. Added independent-replication validation as a reusable feasibility principle.
-5. Added a source-reconciliation rule: when public landing pages and developer/release documentation conflict, pin the revision and privilege the documentation that governs the actual files.
-6. Added a concise-proposal plus separate source-audit documentation pattern.
-7. Added a reproducible vault-validation script during release reconstruction.
+1. Separated reusable research methodology from thesis-specific knowledge.
+2. Established evidence states, research stage contracts, topic scoring/rejection, reusable prompts, publication workflow, and quality gates.
+3. Added graph-native atomic-node rules and explicit knowledge-preservation requirements.
+4. Added a candidate-title checkpoint for deadline-driven thesis selection.
+5. Separated research-compute affordability from zero-cost deployment constraints.
+6. Expanded scoring to include access latency, annotation burden, team capacity, and meaningful multimodality.
 
 ## Why it changed
 
-The thesis moved from planning into a stage where multi-gigabyte JSON, 4K video, dynamic Colab limits, dataset-version differences, and teammate replication had to be handled explicitly. The first long proposal also demonstrated that a complete research log and a readable proposal should not be the same document.
+The first mixed knowledge base had combined reusable methodology with one thesis project. The system was separated so the research process could be reused, while the first follow-up session showed that the workflow also needed atomic graph nodes, clearer deadline exits, and stronger feasibility scoring.
 
 ## What we were trying to learn
 
-Feasibility should be demonstrated on a small end-to-end slice before scaling, structural outputs should be independently reproducible, and source verification should remain available without overwhelming the main proposal.
+How to turn broad domain exploration into a bounded research candidate without losing rejected ideas or unsupported claims.
 
 ## Current understanding
 
-The reusable system now spans research discovery, evidence control, dataset validation, resource feasibility, controlled experiments, documentation, and Git release management. It remains a documented research operating system with lightweight validation tooling, not an automated autonomous research platform.
+By the end of this stage, the research process had a stable Obsidian structure and explicit rules for evidence, candidate selection, preservation, and publication. It was still primarily a documented operating system rather than an automated software product.
 
 ## Remaining uncertainty
 
-The feasibility-pilot methodology is defined, but its actual performance and cost are project-specific and must be measured in each application.
+The system had not yet been tested against a full adversarial literature-validation cycle, large multimodal datasets, or a real feasibility pilot.
 
 ## Next direction
 
-Use the pilot gate on the football thesis, record measured outputs, then proceed to controlled full experiments only after the GO/MODIFY/NO-GO decision.
+Apply the Research OS to the football thesis candidate search and record external-AI research, direct dataset evidence, and benchmark reasoning as first-class artifacts.
 
 ## Historical continuity
 
@@ -63,6 +62,6 @@ This release is a **complete repository snapshot**, not a patch. Earlier notes r
 
 ## Preservation notes
 
-Historical v1-v5 principles are retained. Release 04 additionally records post-v5 lessons through 2026-08-16 without rewriting earlier stages as if those lessons were known from the beginning.
+The original v1 migration logic and v2 graph-native improvements are both part of this release period. Early rules and prompts are retained because they explain how the later evidence-driven workflow emerged.
 
 For the original v1-v5 lineage, see the project's version-history and migration notes as well as [[RELEASE_HISTORY]].

@@ -1,7 +1,7 @@
 ---
 type: moc
 status: active
-public_release: "Release 04"
+public_release: "Release 01"
 updated: 2026-08-16
 tags: [research-os, reusable-pipeline, git-ready, moc]
 ---
@@ -9,17 +9,16 @@ tags: [research-os, reusable-pipeline, git-ready, moc]
 
 ## 1. Project Overview
 
-Reusable Research OS is a topic-agnostic research workflow for moving from an unfamiliar domain to a verified question, feasible experiment, reproducible evidence trail, and publication-ready artifact. **Release 04: Execution-Ready Proposal and Feasibility** represents the state of that workflow at this historical milestone.
+Reusable Research OS is a topic-agnostic research workflow for moving from an unfamiliar domain to a verified question, feasible experiment, reproducible evidence trail, and publication-ready artifact. **Release 01: Foundation and Scope Formation** represents the state of that workflow at this historical milestone.
 
 Start with [[VERSION_BRIEF]] for the human-readable history of this release.
 
 ## 2. Features
 
-1. Everything in Release 03.
-2. Large multimodal-data streaming/feature-store pattern.
-3. Feasibility pilot before paid compute.
-4. Independent replication and source-reconciliation principles.
-5. Git-ready release process and vault-validation tooling.
+1. Evidence protocol, stage contracts, topic scoring and rejection.
+2. Graph-native Obsidian node schema and knowledge-preservation rules.
+3. Reusable prompt, artifact, quality-gate and publication workflow.
+4. Deadline-aware candidate-title checkpoint.
 
 ## 3. Tech Stack
 
@@ -32,7 +31,7 @@ Start with [[VERSION_BRIEF]] for the human-readable history of this release.
 ## 4. Architecture
 
 ```text
-Research Goal --> Evidence Lock --> Dataset Gate --> Mini Feasibility Pilot --> Compact Feature Store --> Controlled Baselines --> Evaluation --> Release
+Research Goal --> Discovery --> Evidence Verification --> Candidate Scoring/Rejection --> Stage Exit --> Research Artifacts --> Publication
 ```
 
 This is a research/knowledge workflow, not a claim of an autonomous software platform. See [[ARCHITECTURE]] and [[01_pipeline/END_TO_END_PIPELINE]].
