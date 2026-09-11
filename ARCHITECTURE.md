@@ -1,30 +1,54 @@
-# Architecture
+Architecture
 
-## Status
-**Implemented as documentation/workflow:** governance, Obsidian graph structure, evidence protocol, stage contracts, scoring, prompts, artifacts, quality gates, and publication flow.  
-**Not implemented:** an autonomous software agent that executes the full research lifecycle.
+Status
 
-## Research and knowledge flow
+Release 05 is the current documented operating system plus lightweight
+release-validation tooling. It is not an autonomous research platform.
+As of this release, the feasibility-pilot gate below has been confirmed
+by one real execution (in a companion project); the replication pattern
+below remains policy only, with zero confirmed executions to date - see
+[[12_execution_validation/FEASIBILITY_FIRST_WORKFLOW_VALIDATED]] and
+[[12_execution_validation/INDEPENDENT_REPLICATION_STATUS]].
 
-```text
-Research goal
-→ discovery and domain exploration
-→ evidence verification
-→ candidate scoring / rejection
-→ stage exit
-→ required artifacts
-→ publication workflow
-```
+End-to-end flow
 
-The vault is the durable state layer. Decisions and evidence are intended to be linkable rather than hidden in transient conversation.
+    Research goal
+    → discovery
+    → primary verification
+    → adversarial evidence lock
+    → dataset release + alignment gate
+    → mini feasibility pilot
+    → compact feature store
+    → controlled baselines
+    → full evaluation
+    → concise research communication
+    → Git release / publication
 
-## Main components
+Large-data execution pattern
 
-1. [[00_governance/SYSTEM_RULES]]
-2. [[00_governance/NODE_SCHEMA]]
-3. [[01_pipeline/END_TO_END_PIPELINE]]
-4. [[02_evidence/EVIDENCE_PROTOCOL]]
-5. [[04_stage_contracts/STAGE_CONTRACTS]]
-6. [[05_scoring/TOPIC_SCORING_AND_REJECTION]]
-7. [[08_quality_gates/QUALITY_GATES]]
-8. [[09_publication/PUBLICATION_PIPELINE]]
+    Large raw source
+    → stream/process once
+    → validate alignment
+    → compact model-ready artifacts
+    → repeated lightweight training
+
+Replication pattern
+
+    Pinned pilot inputs
+    → teammate A run
+    → teammate B run
+    → compare event counts / tensor shapes / windows / validator outputs
+    → structural agreement required before scaling
+
+Main components
+
+1.  [[01_pipeline/LARGE_MULTIMODAL_DATA_PIPELINE]]
+2.  [[08_quality_gates/FEASIBILITY_PILOT_GATE]]
+3.  [[08_quality_gates/INDEPENDENT_REPLICATION_VALIDATION]]
+4.  [[02_evidence/SOURCE_RECONCILIATION_RULE]]
+5.  [[07_artifacts/CONCISE_PROPOSAL_AND_SOURCE_AUDIT_PATTERN]]
+6.  [[07_artifacts/GIT_READY_RESEARCH_RELEASE]]
+7.  [[12_execution_validation/MULTIMODAL_SYNCHRONIZATION_PRINCIPLE]] -
+    new at Release 05.
+
+------------------------------------------------------------------------

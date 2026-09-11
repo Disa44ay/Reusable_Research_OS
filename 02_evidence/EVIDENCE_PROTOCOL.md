@@ -1,38 +1,52 @@
----
-type: protocol
-status: active
-tags: [evidence, verification, anti-hallucination]
-updated: 2026-08-09
----
-# Evidence Protocol
+Evidence Protocol
 
-## Evidence hierarchy
-Primary paper > official dataset or benchmark > official repository > survey > secondary source > AI summary.
+Evidence hierarchy
 
-## Claim states
-`VERIFIED`, confirmed from an original paper, official dataset, benchmark, or official source.
+Primary paper > official dataset or benchmark > official repository >
+survey > secondary source > AI summary.
 
-`SECONDARY`, reported by another credible source but not independently checked.
+Claim states
 
-`HYPOTHESIS`, plausible research idea requiring validation.
+VERIFIED, confirmed from an original paper, official dataset, benchmark,
+or official source.
 
-`REJECTED`, investigated and discarded.
+SECONDARY, reported by another credible source but not independently
+checked.
 
-`UNKNOWN`, not available or not established.
+HYPOTHESIS, plausible research idea requiring validation.
 
-`SUPERSEDED`, once used, later replaced by stronger evidence or a newer decision.
+REJECTED, investigated and discarded.
 
-## Anti-hallucination rules
-If the exact paper cannot be verified, do not fabricate its abstract, findings, metrics, authors, venue, repository, or citation details.
+UNKNOWN, not available or not established.
 
-If a dataset property cannot be verified, write `UNKNOWN`.
+SUPERSEDED, once used, later replaced by stronger evidence or a newer
+decision.
+
+Anti-hallucination rules
+
+If the exact paper cannot be verified, do not fabricate its abstract,
+findings, metrics, authors, venue, repository, or citation details.
+
+If a dataset property cannot be verified, write UNKNOWN.
 
 If a result is inferred rather than stated, label it as inference.
 
-If a research direction is described as multimodal, explicitly name every modality and verify that the public dataset actually provides each modality under usable access and licensing conditions.
+If a research direction is described as multimodal, explicitly name
+every modality and verify that the public dataset actually provides each
+modality under usable access and licensing conditions.
 
-## Paper-reading extraction fields
-Exact citation, problem, dataset, modalities, preprocessing, model, methodology, architecture, loss, metrics, baselines, results, strengths, weaknesses, limitations, explicit future work, code, compute, novelty, reproducibility, and relevance to active constraints.
+Paper-reading extraction fields
 
-## Gap promotion rule
-A candidate gap can become validated only when the limitation is supported by multiple papers, or a recent primary paper explicitly identifies it as future work, and the dataset permits testing it, and the intervention is meaningfully distinct from existing methods.
+Exact citation, problem, dataset, modalities, preprocessing, model,
+methodology, architecture, loss, metrics, baselines, results, strengths,
+weaknesses, limitations, explicit future work, code, compute, novelty,
+reproducibility, and relevance to active constraints.
+
+Gap promotion rule
+
+A candidate gap can become validated only when the limitation is
+supported by multiple papers, or a recent primary paper explicitly
+identifies it as future work, and the dataset permits testing it, and
+the intervention is meaningfully distinct from existing methods.
+
+------------------------------------------------------------------------

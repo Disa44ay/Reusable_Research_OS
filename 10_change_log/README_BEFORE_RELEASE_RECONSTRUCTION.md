@@ -1,42 +1,103 @@
-# Historical README Before Public-Release Reconstruction
+Historical README Before Public-Release Reconstruction
 
-This file preserves the README text that existed in the historical snapshot used as the basis for this public release. It is retained for provenance. The repository-root README was rewritten only for clearer Git onboarding.
+This file preserves the README text that existed in the historical
+snapshot used as the basis for this public release. It is retained for
+provenance. The repository-root README was rewritten only for clearer
+Git onboarding.
 
----
+------------------------------------------------------------------------
 
----
-type: moc
-status: active
-tags: [research-os, reusable-pipeline, moc]
-updated: 2026-08-10
----
-# Reusable Research OS
+Reusable Research OS
 
-This vault contains the reusable research system. It must remain topic-agnostic.
+1. Project Overview
 
-Its job is to let an AI or human start from a brand-new research area and move through evidence discovery, dataset validation, literature review, gap validation, topic selection, architecture, experiments, implementation, scientific writing, review, and publication preparation without inventing evidence.
+Reusable Research OS is a topic-agnostic framework for turning an
+unfamiliar research domain into a verified question, reproducible
+benchmark, feasible implementation, interpretable experiment, and
+publication-ready artifact. It explicitly preserves the reasoning
+journey, including rejected claims and data-quality failures.
 
-## Boundary rule
-Topic-specific findings, papers, datasets, candidate gaps, experimental results, thesis decisions, and defense material belong in the separate research-project vault, not here.
+v5 extends the evidence-first workflow with execution patterns for large
+multimodal datasets, limited accelerator budgets, feasibility pilots,
+and Git-ready research releases.
 
-## Read order
-1. [[00_governance/SYSTEM_RULES]]
-2. [[01_pipeline/END_TO_END_PIPELINE]]
-3. [[02_evidence/EVIDENCE_PROTOCOL]]
-4. [[03_ai_roles/AI_ORCHESTRATION]]
-5. [[04_stage_contracts/STAGE_CONTRACTS]]
-6. [[05_scoring/TOPIC_SCORING_AND_REJECTION]]
-7. [[06_prompts/REUSABLE_PROMPT_LIBRARY]]
-8. [[07_artifacts/REQUIRED_ARTIFACTS]]
-9. [[08_quality_gates/QUALITY_GATES]]
-10. [[09_publication/PUBLICATION_PIPELINE]]
-11. [[10_change_log/CHANGELOG]]
-12. [[11_session_history/SESSION_LOG]]
+2. Features
 
-## Current system status
-Version: 0.1 migrated from the original thesis knowledge base.
+1.  Evidence states and adversarial novelty locking.
+2.  Atomic Obsidian nodes with backlinks for decisions, constraints,
+    sources, AI runs, and corrections.
+3.  Dataset revision, schema, correction, and alignment gates.
+4.  Large-file streaming and compact feature-store pattern.
+5.  Pre-paid-compute feasibility pilot with go/no-go criteria.
+6.  Negative-result-safe baseline design.
+7.  AI-helper provenance and correction tracking.
+8.  Git-ready README, release, hashing, and historical snapshot
+    practices.
+9.  Publication and reproducibility artifact contracts.
 
-The original mixed knowledge base has been separated into this reusable system vault and a thesis-specific research vault. Nothing from the source files was intentionally deleted. See [[10_change_log/MIGRATION_MANIFEST]].
+3. Tech Stack
 
-## Graph and reasoning extraction
-Important constraints, decisions, sources, candidates, and rejections should be represented as atomic nodes in addition to readable narrative notes. Follow [[00_governance/NODE_SCHEMA]].
+1.  Obsidian Markdown: graph-native research memory.
+2.  Git/GitHub: version history, tags, reviews, and public repository
+    releases.
+3.  Python/Jupyter: data validation, experiments, and reproducibility
+    tooling.
+4.  Parquet/NumPy/NPZ: compact model-ready research artifacts.
+5.  FFmpeg: efficient video slicing/sampling in multimedia projects.
+6.  Primary-source literature: final evidence authority.
+7.  External AI assistants: scoped discovery/reviewer roles with prompt
+    provenance.
+
+4. Architecture
+
+    flowchart TD
+        A[Research Goal] --> B[Discovery]
+        B --> C[Primary Verification]
+        C --> D[Adversarial Evidence Lock]
+        D --> E[Dataset Revision + Alignment Gate]
+        E --> F[Mini Feasibility Pilot]
+        F -->|PASS| G[Compact Feature Store]
+        F -->|FAIL| H[Redesign Before Paid Compute]
+        G --> I[Controlled Baselines]
+        I --> J[Full Evaluation]
+        J --> K[Writing + Git Release + Publication]
+
+Core entry points: [[00_governance/SYSTEM_RULES]],
+[[01_pipeline/END_TO_END_PIPELINE]],
+[[01_pipeline/LARGE_MULTIMODAL_DATA_PIPELINE]], and
+[[08_quality_gates/FEASIBILITY_PILOT_GATE]].
+
+5. Project Structure
+
+    Reusable_Research_OS/
+    ├── 00_governance/      # governance, persistence, atomic-node rules
+    ├── 01_pipeline/        # standard and large-multimodal pipelines
+    ├── 02_evidence/        # verification and adversarial evidence locking
+    ├── 03_ai_roles/        # AI-helper roles and orchestration
+    ├── 04_stage_contracts/ # stage exits and negative-result contract
+    ├── 05_scoring/         # candidate scoring and rejection
+    ├── 06_prompts/         # reusable prompt library and run ledger
+    ├── 07_artifacts/       # reproducibility and Git-release artifacts
+    ├── 08_quality_gates/   # data, evidence, feasibility, implementation gates
+    ├── 09_publication/     # publication workflow
+    ├── 10_change_log/      # changelog and snapshot history
+    ├── 11_session_history/ # chronological system evolution
+    └── README.md
+
+Version
+
+v5, 2026-08-14. This release is the executable research-system snapshot.
+It preserves all v4 evidence-lock work and adds large-data compression,
+pilot gating, and Git-release practices. See
+[[10_change_log/VERSION_HISTORY]].
+
+Graph integrity record: [[GRAPH_AUDIT]].
+
+Additional Navigation
+
+-   [[11_session_history/SESSION_LOG]]
+-   [[06_prompts/REUSABLE_PROMPT_LIBRARY]]
+-   [[09_publication/PUBLICATION_PIPELINE]]
+-   [[10_change_log/MIGRATION_MANIFEST]]
+
+------------------------------------------------------------------------
