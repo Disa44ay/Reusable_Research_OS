@@ -102,3 +102,38 @@ into v5.
     authoritative definition this system's principles should reference.
 
 ------------------------------------------------------------------------
+
+# Session Log — Release 06 Addition
+
+## 2026-09-22 — Release 06 packaging session
+
+**Trigger:** Explicit request to build a Release 06 public package for
+both the Reusable Research OS and the Thesis Research Project, scoped
+to everything preceding the companion project's N1 notebook execution.
+
+**Scope decision (user-confirmed):** Release 06 covers architecture and
+gate-extension decisions made through the pre-implementation
+"structure update" phase. It explicitly excludes N1's execution and
+results, and all of N2-N5, which are reserved for a future release.
+
+**Source material used:** The existing project memory record of the
+companion project's Gate H (compute feasibility, resolved 2026-09-15)
+and Gate E extension (multi-match offset generalization, resolved
+2026-09-16/17) work, generalized into this repository without
+thesis-specific numbers, per the two-vault separation rule.
+
+**Work done this session:**
+
+- Added `13_gate_extension_validation/` with four new principle files.
+- Rewrote `README.md`, `VERSION_BRIEF.md`, `CURRENT_STATE.md`,
+  `ARCHITECTURE.md`, `RELEASE_HISTORY.md` (new row) for Release 06.
+- Appended Release 06 entries to `CHANGELOG.md`, `MIGRATION_MANIFEST.md`,
+  `VERSION_HISTORY.md`, and this session log.
+- Re-audited the wikilink graph (see `GRAPH_AUDIT.md`).
+- Added `docs/diagrams/workflows/gate_extension_confirmed_r06.md`.
+
+**Open item carried forward:** The tracking-sync gap generalized in
+`TRACKING_SYNC_RECONCILIATION_NOTE.md` — a live discrepancy between the
+companion project's automated git-based state check and its
+session-relayed record — remains unresolved as of this session and is
+not something this release can close from the Reusable OS side.

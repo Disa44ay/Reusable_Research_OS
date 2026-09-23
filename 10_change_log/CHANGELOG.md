@@ -76,3 +76,52 @@ deployment constraints.
     this release's actual file tree.
 
 ------------------------------------------------------------------------
+
+# Changelog — Release 06 Addition
+
+## Release 06 — Pre-Implementation Gate Extension (2026-09-22)
+
+### Added
+
+- `13_gate_extension_validation/PRE_IMPLEMENTATION_GATE_EXTENSION.md` —
+  the two-part gate-extension pattern (compute measurement,
+  multi-instance generalization check) for the period between a passed
+  single-instance feasibility pilot and full-scale implementation.
+- `13_gate_extension_validation/COMPUTE_FEASIBILITY_MEASUREMENT_PRINCIPLE.md`
+  — generalizes a real measured result in which an accelerator-budget
+  assumption made ahead of any run reserved paid compute for a stage
+  that turned out to run almost entirely on CPU.
+- `13_gate_extension_validation/MULTI_INSTANCE_GENERALIZATION_CHECK.md`
+  — generalizes a real result in which a fixed single-instance offset
+  confirmed at Release 05 did not hold uniformly once tested against
+  the full target population, and the extended check independently
+  surfaced an unrelated defect.
+- `13_gate_extension_validation/TRACKING_SYNC_RECONCILIATION_NOTE.md` —
+  a new principle for projects with more than one durable tracking
+  surface: state disagreements explicitly rather than letting one
+  silently overrule the other.
+
+### Changed
+
+- `README.md` — updated architecture-flow line and Project Structure
+  list to include `13_gate_extension_validation/`.
+- `VERSION_BRIEF.md` — full rewrite for Release 06.
+- `CURRENT_STATE.md` — full rewrite for Release 06.
+- `RELEASE_HISTORY.md` — new Release 06 row.
+- `ARCHITECTURE.md` — flow diagram updated to insert the
+  Pre-Implementation Gate Extension stage.
+- `GRAPH_AUDIT.md` — re-audited against the Release 06 file tree.
+- `FILE_INTEGRITY_SHA256.txt` — regenerated to cover every file in the
+  complete Release 01-06 snapshot.
+
+### Removed
+
+- Nothing. No Release 01-05 file was deleted or replaced in place.
+
+### Explicitly out of scope for this release
+
+- Any content from the companion Thesis Research Project's N1
+  (Acquire & Validate) notebook execution or later. Release 06 stops at
+  the pre-implementation architecture and gate-extension decisions that
+  preceded N1's execution. N1 through N5 are reserved for a future,
+  separate release.

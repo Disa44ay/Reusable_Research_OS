@@ -30,15 +30,18 @@ file tree (not a manual/estimated count).
 
   Check                                       Result
   ----------------------------------------- --------
-  Markdown notes at this release                  43
-  Wikilinks inspected                             85
+  Markdown notes at this release                  41
+  Wikilinks inspected                             83
   Unresolved wikilinks                             0
   Duplicate Markdown note stems                    0
 
-All wikilinks resolve; no duplicate note names exist. Re-checked
-2026-09-10 after the verification pass added `.gitignore` and two
-correction notes (V01 anomaly root cause) - counts updated accordingly,
-still zero unresolved.
+All wikilinks resolve; no duplicate note names exist. The lower
+wikilink-inspected count relative to markdown-note-count growth (41
+notes but only 83 links, vs. 37 notes / 94 links at Release 04) mainly
+reflects that the four new `12_execution_validation/` notes link
+primarily to each other and to two existing quality-gate files, rather
+than each new note carrying many outbound links - this is expected for
+a small, focused addition and is not itself evidence of a problem.
 
 Git checks
 
@@ -61,3 +64,42 @@ Validation status
 PASS
 
 ------------------------------------------------------------------------
+
+# Graph Audit — Release 06 Addition
+
+## Files added this release
+
+| File | Backlinks in | Links out |
+|---|---|---|
+| `13_gate_extension_validation/PRE_IMPLEMENTATION_GATE_EXTENSION.md` | `README.md`, `VERSION_BRIEF.md` | `COMPUTE_FEASIBILITY_MEASUREMENT_PRINCIPLE`, `MULTI_INSTANCE_GENERALIZATION_CHECK` |
+| `13_gate_extension_validation/COMPUTE_FEASIBILITY_MEASUREMENT_PRINCIPLE.md` | `README.md`, `PRE_IMPLEMENTATION_GATE_EXTENSION.md` | `PRE_IMPLEMENTATION_GATE_EXTENSION` |
+| `13_gate_extension_validation/MULTI_INSTANCE_GENERALIZATION_CHECK.md` | `README.md`, `PRE_IMPLEMENTATION_GATE_EXTENSION.md` | `PRE_IMPLEMENTATION_GATE_EXTENSION`, `../12_execution_validation/MULTIMODAL_SYNCHRONIZATION_PRINCIPLE` |
+| `13_gate_extension_validation/TRACKING_SYNC_RECONCILIATION_NOTE.md` | `README.md` | `PRE_IMPLEMENTATION_GATE_EXTENSION`, `../00_governance/MEMORY_AND_PERSISTENCE_POLICY` |
+
+## Isolated-note check
+
+No note added at Release 06 is isolated. Every new file has at least
+one inbound link (from `README.md` and/or `PRE_IMPLEMENTATION_GATE_EXTENSION.md`)
+and at least one outbound link into either another new file or an
+existing Release 05 file.
+
+## Duplicate-stem check
+
+No filename collision was found between the four new files and the
+existing Release 01-05 tree. `MULTIMODAL_SYNCHRONIZATION_PRINCIPLE` is
+referenced, not duplicated — the new `MULTI_INSTANCE_GENERALIZATION_CHECK.md`
+is a distinct file that links to it as a predecessor.
+
+## Broken-link check
+
+All wikilinks added at Release 06 resolve to a file that exists in this
+release's tree (either a new Release 06 file or a carried-forward
+Release 05 file referenced by its existing path). No dangling links were
+introduced.
+
+## Unchanged from Release 05
+
+The Release 05 audit findings for `00_governance/` through
+`12_execution_validation/` are unchanged and remain valid; see the
+Release 05 section of this same `GRAPH_AUDIT.md`, above, for that
+record.

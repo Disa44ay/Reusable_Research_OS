@@ -52,3 +52,66 @@ rather than only reporting the success.
 Compatibility: no folder was renamed, removed, or renumbered.
 
 ------------------------------------------------------------------------
+
+# Migration Manifest — Release 06 Addition
+
+## Old structure (Release 05)
+
+```
+Reusable_Research_OS/
+├── 00_governance/ ... 12_execution_validation/
+├── docs/diagrams/workflows/feasibility_gate_confirmed_r05.md
+├── ARCHITECTURE.md
+├── CURRENT_STATE.md
+├── FILE_INTEGRITY_SHA256.txt
+├── GRAPH_AUDIT.md
+├── README.md
+├── RELEASE_HISTORY.md
+└── VERSION_BRIEF.md
+```
+
+## New structure (Release 06)
+
+```
+Reusable_Research_OS/
+├── 00_governance/ ... 12_execution_validation/         (unchanged)
+├── 13_gate_extension_validation/                        (NEW)
+│   ├── PRE_IMPLEMENTATION_GATE_EXTENSION.md
+│   ├── COMPUTE_FEASIBILITY_MEASUREMENT_PRINCIPLE.md
+│   ├── MULTI_INSTANCE_GENERALIZATION_CHECK.md
+│   └── TRACKING_SYNC_RECONCILIATION_NOTE.md
+├── docs/diagrams/workflows/
+│   ├── feasibility_gate_confirmed_r05.md                (unchanged)
+│   └── gate_extension_confirmed_r06.md                  (NEW)
+├── ARCHITECTURE.md                                       (rewritten)
+├── CURRENT_STATE.md                                      (rewritten)
+├── FILE_INTEGRITY_SHA256.txt                             (regenerated)
+├── GRAPH_AUDIT.md                                        (rewritten)
+├── README.md                                             (rewritten)
+├── RELEASE_HISTORY.md                                    (new row)
+└── VERSION_BRIEF.md                                      (rewritten)
+```
+
+## Migration path
+
+1. No folder was renamed, moved, or removed. `13_gate_extension_validation/`
+   is a new sibling folder using the next free top-level number after
+   `12_execution_validation/`, following the same numbering convention
+   established at Release 04/05.
+2. No content inside `00_governance/` through `12_execution_validation/`
+   changed. A Release 05 checkout remains valid; Release 06 only adds to
+   it.
+3. Root-level files listed as "rewritten" above replace the equivalent
+   Release 05 file in full; their Release 05 versions remain readable
+   inside `Reusable_Research_OS_Release_05_COMPLETE_CONTEXT.txt`.
+
+## Compatibility considerations
+
+- Any external link or reference to a Release 05 path
+  (`12_execution_validation/...`, `docs/diagrams/workflows/feasibility_gate_confirmed_r05.md`)
+  continues to resolve unchanged.
+- New wikilinks introduced at Release 06 point only to files that exist
+  in this release; see `GRAPH_AUDIT.md` for the re-audit.
+- `FILE_INTEGRITY_SHA256.txt` at Release 06 lists a hash for every file
+  in this complete Release 01-06 snapshot, including files unchanged
+  since earlier releases; see `HOW_TO_VERIFY_RELEASE_06_PACKAGES.md`.

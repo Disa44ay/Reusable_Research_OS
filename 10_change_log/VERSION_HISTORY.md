@@ -50,3 +50,20 @@ Public Git release mapping
 See [[../../RELEASE_HISTORY]] and [[../../VERSION_BRIEF]].
 
 ------------------------------------------------------------------------
+
+# Version History — Release 06 Addition
+
+| Internal version | Public release | Date closed | Headline |
+|---|---|---|---|
+| v6 (in progress) | Release 06 | 2026-09-22 | Pre-Implementation Gate Extension: compute-feasibility measurement principle, multi-instance generalization check, tracking-sync reconciliation note |
+
+## Continuity statement
+
+Release 06 continues the same v1 → v2 → v3 → v4 → v5 → v6 lineage
+already recorded in this file for Releases 01-05. It is not a new
+project and does not restart version numbering. The internal version
+this release corresponds to is still open — Release 06 packages the
+portion of that internal version's work that precedes the companion
+Thesis Research Project's N1 (Acquire & Validate) notebook execution.
+Work from N1 onward will close out v6 (or open v7, depending on scope
+at that time) in a later, separate release.
